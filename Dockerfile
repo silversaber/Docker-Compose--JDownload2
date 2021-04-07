@@ -1,5 +1,5 @@
 #jenkins
-FROM jlesage/jdownloader-2
+FROM jlesage/jdownloader-2:lts
 
 USER root
 
