@@ -3,7 +3,8 @@ FROM jlesage/jdownloader-2
 
 USER root
 
-RUN apk add fonts-nanum
+CMD apt-get update
+CMD apt-get install -y fonts-nanum
 CMD fc-cache -fv
 
 # docker install
