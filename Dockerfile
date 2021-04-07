@@ -3,10 +3,8 @@ FROM jlesage/jdownloader-2
 
 USER root
 
-RUN apt-get update
-
-RUN apt-get install -y fonts-nanum
-RUN fc-cache -fv
+RUN apk add --update fonts-nanum
+CMD fc-cache -fv
 
 # docker install
 RUN curl -fsSL https://get.docker.com/ | sh
