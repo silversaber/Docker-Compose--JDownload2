@@ -17,8 +17,9 @@ ARG JDOWNLOADER_URL=http://installer.jdownloader.org/JDownloader.jar
 # Define working directory.
 WORKDIR /tmp
 
-RUN apt-get install -y fonts-nanum
-RUN fc-cache -fv
+RUN \
+    apt-get install -y fonts-nanum
+    fc-cache -fv
 
 # Download JDownloader 2.
 RUN \
